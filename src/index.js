@@ -15,6 +15,8 @@ import './index.css';
 //   }
 // }
 
+
+
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -143,16 +145,22 @@ class Board extends React.Component {
           {this.renderSquare(0)}
           {this.renderSquare(1)}
           {this.renderSquare(2)}
+          {this.renderSquare(3)}
+          {this.renderSquare(4)}
         </div>
         <div className="board-row">
           {this.renderSquare(3)}
           {this.renderSquare(4)}
-          {this.renderSquare(5)}
+          {this.renderSquare(5)
+          {this.renderSquare(6)}
+          {this.renderSquare(7)}}
         </div>
         <div className="board-row">
           {this.renderSquare(6)}
           {this.renderSquare(7)}
           {this.renderSquare(8)}
+          {this.renderSquare(9)}
+          {this.renderSquare(10)}
         </div>
         {this.renderResetButton()}
       </div>
